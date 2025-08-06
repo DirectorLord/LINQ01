@@ -10,8 +10,32 @@ internal class Program
     //System.Linq.Enumerable+ListWhereIterator`1[LINQ01.Product]
     //what is this??????
     {
-        var result = ListGenerators.ProductList.Where(p => p.UnitsInStock == 0);
+        #region Question1
+        var outOfStock = ListGenerators.ProductList.Where(p => p.UnitsInStock == 0);
 
-        Console.WriteLine(result);
+        outOfStock.Print();
+        #endregion
+
+        #region Question2
+        var priceProducts = ListGenerators.ProductList.Where(p => p.UnitsInStock > 0 && p.UnitPrice > 3.00M);
+
+        priceProducts.Print();
+        #endregion
+
+        #region Question3
+
+        #endregion
+
+        #region Question4
+
+        #endregion
+
+        #region Question5
+
+        #endregion
+
+        #region Question6
+
+        #endregion
     }
 }
