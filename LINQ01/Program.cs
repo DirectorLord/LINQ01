@@ -23,11 +23,14 @@ internal class Program
         #endregion
 
         #region Question3
+        var digits = new[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
+        var result = digits.Where( d => d.Length < Array.IndexOf(digits, d) );
+        result.Print();
         #endregion
 
         #region Question4
-
+        var first = ListGenerators.ProductList.FirstOrDefault(p => p.UnitsInStock == 0); first.Print();
         #endregion
 
         #region Question5
