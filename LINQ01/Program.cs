@@ -34,11 +34,15 @@ internal class Program
         #endregion
 
         #region Question5
-
+        var firstExp = ListGenerators.ProductList.FirstOrDefault(p => p.UnitPrice == 1000); firstExp.Print();
         #endregion
 
         #region Question6
+        var skip = new[] { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
+        var resSkip = skip.Where(n => n>5).FirstOrDefault();
+
+        resSkip.Print();
         #endregion
     }
 }
